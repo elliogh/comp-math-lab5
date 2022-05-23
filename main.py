@@ -58,7 +58,7 @@ if __name__ == '__main__':
                 plot(dataset, x0, result, solve, name)
                 print(name + ':', result)
                 if table is not None:
-                    print(tab(table, tablefmt='fancy_grid', floatfmt='2.2f', headers=['y', *[f'Δ{i}y' for i in range(len(x))]]))
+                    print(tab(table, tablefmt='fancy_grid', floatfmt='2.4f', headers=['y', *[f'Δ{i}y' for i in range(len(x))]]))
             except Exception as e:
                 raise e
 
